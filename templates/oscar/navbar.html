@@ -1,0 +1,22 @@
+<div class="searx-navbar">{{- "" -}}
+    <span class="instance {% if rtl %}pull-right{% else %}pull-left{% endif%}">{{- "" -}}
+        <div class="jsx-1909784008 img">
+        <a href="{{ url_for('index') }}">{{ instance_name }}</a>{{- "" -}}</div>
+    </span>{{- "" -}}
+    <span class="{% if rtl %}pull-left{% else %}pull-right{% endif %}">{{- "" -}}
+        <button tabindex="0" type="button" class="jsx-37260609281 base">
+            <div class="jsx-3726060928 labelContainer">
+                <a href="{{ url_for('about') }}">{{ _('about') }}</a>{{- "" -}}
+            </div>
+            <div class="jsx-3726060928 shortcutContainer"><span
+                    class="jsx-3726060928 shortcut shortcutIsVisible"><span>About</span></span></div>
+        </button>
+        <button tabindex="0" type="button" class="jsx-3726060928 base">
+            <div class="jsx-3726060928 labelContainer">
+                <a href="{{ url_for('preferences') }}">{{ _('preferences') }}</a>{{- "" -}}
+            </div>
+            <div class="jsx-3726060928 shortcutContainer"><span
+                    class="jsx-3726060928 shortcut shortcutIsVisible"><span>About</span></span></div>
+        </button>
+    </span>{{- "" -}}
+</div>

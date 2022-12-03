@@ -1,0 +1,99 @@
+<div{% if rtl %} dir="ltr"{% endif %}>
+  <h1>About <a href="{{ url_for('index') }}">Dijets Search Engine</a></h1>
+
+  <p>
+    Dijets Search is a fully decentralised metasearch engine that aggregates results from several search engines</a>,
+    and sources to output responses based on the combined score for each of the suggested links. Dijets Search is completely
+    ad-free with absolutely no trackers that could passively observe your search queries.
+  </p>
+
+  <p>More about Dijets & Dijets Search Engine.</p>
+
+  <ul>
+    <li><a href="#">github</a></li>
+    <li><a href="https://twitter.com/OfficialDijets">twitter</a></li>
+    <li><a href="https://facebook.com/DijetalRealm">facebook</a></li>
+    <li><a href="https://dijets.io">Dijets Inc.</a></li>
+  </ul>
+  <hr />
+
+  <h2>With Dijets Browser</h2>
+
+  <p>
+    You can download Dijets Browser to take full advantage of Dijets Decentralised Apps and Services.
+    Dijets Search Engine is the default search provider within the browser and you get tonnes of cool features including a digital wallet
+    and all of Dijets services already integrated as extensions.
+  </p>
+
+  <h2>Why use Dijets Search?</h2>
+
+  <ul>
+    <li>
+      Dijets may not offer you as personalised results as Google, but it doesn't
+      generate a profile about you either.
+    </li>
+    <li>
+      Put simply, Dijets search engine doesn't care about what you search for, never shares anything with a
+      third party, and it can't be used to compromise you.
+    </li>
+    <li>
+      Dijets Search is completely free to use and is part of Dijets growing ecosystem of Decentralised products and services.
+      Read more about <a href="https://binaries.dijets.io">Dijets Ecosystem</a>.
+    </li>
+  </ul>
+
+  <p>
+    If you do care about privacy, want to be a conscious user, or otherwise
+    believe in digital freedom, make Dijets your default search engine. You can even set Dijets
+    as a default search service provider within Dijets Browser.
+  </p>
+
+  <h2>Technical details - How does it work?</h2>
+
+  <p>
+    Dijets Search is a <a href="https://en.wikipedia.org/wiki/Metasearch_engine">metasearch engine</a>,
+    with enhanced features that provide you with unparalleled security and anonymity.
+
+    There are DLT-Specific features that aren't available on any other search engines. Furthermore, Dijets Search Engine
+    is packed with general utility features like:
+    
+    <ul>
+      <li>Export your Search Results in a CSV, JSON or RSS format.</li>
+      <li>Play Media files within the same window, without having to manage multiple tabs.</li>
+      <li>Navigate Maps and search locations from the same query results page.</li>
+      <li>Modular searches based on individual preference. Choose to include or exclude engines you don't want to query.</li>
+      <li>Route your search query through dual proxies to completely mask your IP from the serving pages. </li>
+    </ul>
+
+    Search queries submitted on Dijets are mixed up with searches on other
+    platforms without storing search data. Queries are made using a POST request
+    on every browser (except Chromium-based browsers*).  Therefore they can neither show up 
+    in our logs, nor your url history. In the case of Chromium-based
+    browser users there is an exception: searx uses the search bar to perform GET
+    requests.
+    
+    Dijets Search can be added to your browser's search bar; moreover, it can be set as
+    the default search engine.
+  </p>
+
+  <h2 id='add to browser'>How to set as the default search engine?</h2>
+
+  <p>
+    Dijets Search supports <a href="https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md">OpenSearch</a>.
+    For more information on changing your default search engine, see your browser's documentation:
+  </p>
+
+  <ul>
+    <li><a href="https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox">Firefox</a></li>
+    <li><a href="https://support.microsoft.com/en-us/help/4028574/microsoft-edge-change-the-default-search-engine">Microsoft Edge</a></li>
+    <li>Chromium-based browsers <a href="https://www.chromium.org/tab-to-search">only add websites that the user navigates to without a path.</a>
+  </ul>
+
+  <h2>Where to find anonymous usage statistics of this instance ?</h2>
+
+  <p>
+    <a href="{{ url_for('stats') }}">Stats page</a> contains some useful data about the engines used.
+  </p>
+
+</div>
+{% include "__common__/aboutextend.html" ignore missing %}
